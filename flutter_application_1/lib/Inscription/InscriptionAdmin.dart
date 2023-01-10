@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: InscriptionAdmin(),
-    );
-  }
-}
-
 class InscriptionAdmin extends StatefulWidget {
   const InscriptionAdmin({ Key? key}) : super(key:key);
 
@@ -26,19 +11,19 @@ class _HomePageState extends State <InscriptionAdmin> {
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LoginScreen(),
+      body: InscriptionAdminScreen(),
     );
   }
 }
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class InscriptionAdminScreen extends StatefulWidget {
+  const InscriptionAdminScreen({Key? key}) : super(key: key);
 
   @override 
-  _LoginScreenState createState() => _LoginScreenState();
+  _InscriptionAdminScreenState createState() => _InscriptionAdminScreenState();
 }
 
-class _LoginScreenState extends State <LoginScreen> {
+class _InscriptionAdminScreenState extends State <InscriptionAdminScreen> {
   @override 
   Widget build(BuildContext context){
 
